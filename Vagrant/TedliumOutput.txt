@@ -1,0 +1,637 @@
+mario@Mario:/kaldi-trunk/egs/tedlium/s5$ ./run.sh
+Commencing Stage 0
+/kaldi-trunk/egs/tedlium/s5/db /kaldi-trunk/egs/tedlium/s5
+/kaldi-trunk/egs/tedlium/s5
+Successfully validated data-directory data/dev
+Successfully validated data-directory data/test
+Successfully validated data-directory data/train
+Checking data/local/dict/silence_phones.txt ...
+--> reading data/local/dict/silence_phones.txt
+--> data/local/dict/silence_phones.txt is OK
+
+Checking data/local/dict/optional_silence.txt ...
+--> reading data/local/dict/optional_silence.txt
+--> data/local/dict/optional_silence.txt is OK
+
+Checking data/local/dict/nonsilence_phones.txt ...
+--> reading data/local/dict/nonsilence_phones.txt
+--> data/local/dict/silence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dict/lexicon.txt
+--> reading data/local/dict/lexicon.txt
+--> data/local/dict/lexicon.txt is OK
+
+Checking data/local/dict/extra_questions.txt ...
+--> data/local/dict/extra_questions.txt is empty (this is OK)
+Checking data/local/dict/silence_phones.txt ...
+--> reading data/local/dict/silence_phones.txt
+--> data/local/dict/silence_phones.txt is OK
+
+Checking data/local/dict/optional_silence.txt ...
+--> reading data/local/dict/optional_silence.txt
+--> data/local/dict/optional_silence.txt is OK
+
+Checking data/local/dict/nonsilence_phones.txt ...
+--> reading data/local/dict/nonsilence_phones.txt
+--> data/local/dict/silence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dict/lexicon.txt
+--> reading data/local/dict/lexicon.txt
+--> data/local/dict/lexicon.txt is OK
+
+Checking data/local/dict/extra_questions.txt ...
+--> data/local/dict/extra_questions.txt is empty (this is OK)
+**Creating data/local/dict/lexiconp.txt from data/local/dict/lexicon.txt
+fstaddselfloops 'echo 192 |' 'echo 150119 |' 
+prepare_lang.sh: validating output directory
+Checking data/lang/phones.txt ...
+--> data/lang/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> data/lang/words.txt has "#0"
+--> data/lang/words.txt is OK
+
+Checking data/lang/phones/context_indep.{txt, int, csl} ...
+--> 35 entry/entries in data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.int corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.csl corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/lang/phones/disambig.{txt, int, csl} ...
+--> 18 entry/entries in data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.int corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.csl corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.{txt, int, csl} are OK
+
+Checking data/lang/phones/nonsilence.{txt, int, csl} ...
+--> 156 entry/entries in data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.int corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.csl corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/lang/phones/silence.{txt, int, csl} ...
+--> 35 entry/entries in data/lang/phones/silence.txt
+--> data/lang/phones/silence.int corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.csl corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/optional_silence.{txt, int, csl} ...
+--> 1 entry/entries in data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.int corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.csl corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/roots.{txt, int} ...
+--> 46 entry/entries in data/lang/phones/roots.txt
+--> data/lang/phones/roots.int corresponds to data/lang/phones/roots.txt
+--> data/lang/phones/roots.{txt, int} are OK
+
+Checking data/lang/phones/sets.{txt, int} ...
+--> 46 entry/entries in data/lang/phones/sets.txt
+--> data/lang/phones/sets.int corresponds to data/lang/phones/sets.txt
+--> data/lang/phones/sets.{txt, int} are OK
+
+Checking data/lang/phones/extra_questions.{txt, int} ...
+--> 9 entry/entries in data/lang/phones/extra_questions.txt
+--> data/lang/phones/extra_questions.int corresponds to data/lang/phones/extra_questions.txt
+--> data/lang/phones/extra_questions.{txt, int} are OK
+
+Checking data/lang/phones/word_boundary.{txt, int} ...
+--> 191 entry/entries in data/lang/phones/word_boundary.txt
+--> data/lang/phones/word_boundary.int corresponds to data/lang/phones/word_boundary.txt
+--> data/lang/phones/word_boundary.{txt, int} are OK
+
+Checking disjoint: silence.txt, nosilenct.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> summation property is OK
+
+Checking optional_silence.txt ...
+--> reading data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/lang/phones/disambig.txt has "#0" and "#1"
+--> data/lang/phones/disambig.txt is OK
+
+Checking topo ...
+--> data/lang/topo's nonsilence section is OK
+--> data/lang/topo's silence section is OK
+--> data/lang/topo is OK
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/lang/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/lang/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/lang/phones/word_boundary.txt is OK
+
+Checking word_boundary.int and disambig.int
+--> generating a 74 words sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 48 words sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/lang/oov.{txt, int} ...
+--> 1 entry/entries in data/lang/oov.txt
+--> data/lang/oov.int corresponds to data/lang/oov.txt
+--> data/lang/oov.{txt, int} are OK
+
+--> SUCCESS
+arpa2fst - 
+\data\
+Processing 1-grams
+Processing 2-grams
+Processing 3-grams
+Connected 0 states without outgoing arcs.
+remove_oovs.pl: removed 0 lines.
+Checking how stochastic G is (the first of these numbers should be small):
+fstisstochastic data/lang_test/G.fst 
+0.000109259 -3.28925
+First few lines of lexicon FST:
+0 1 <eps> <eps> 0.693147182
+0 1 SIL <eps> 0.693147182
+1 2 SIL_S !SIL 0.693147182
+1 1 SIL_S !SIL 0.693147182
+1 2 M_S 'm 0.693147182
+1 1 M_S 'm 0.693147182
+1 1 ER_S 're 0.693147182
+1 2 R_S 're 0.693147182
+1 1 R_S 're 0.693147182
+1 2 ER_S 're 0.693147182
+Performing further checks
+fsttablecompose data/lang_test/L_disambig.fst data/lang_test/G.fst 
+fstdeterminizestar 
+fstisstochastic 
+fsttablecompose data/lang/L_disambig.fst data/lang_test/G.fst 
+0.000109259 -3.30284
+LG is not stochastic
+Stage 0 Complete
+Commencing Stage 1
+steps/make_mfcc.sh --nj 4 --cmd run.pl data/test data/test/log data/test/data
+Successfully validated data-directory data/test
+steps/make_mfcc.sh [info]: segments file exists: using that.
+Succeeded creating MFCC features for test
+steps/compute_cmvn_stats.sh data/test data/test/log data/test/data
+Succeeded creating CMVN stats for test
+steps/make_mfcc.sh --nj 4 --cmd run.pl data/dev data/dev/log data/dev/data
+Successfully validated data-directory data/dev
+steps/make_mfcc.sh [info]: segments file exists: using that.
+Succeeded creating MFCC features for dev
+steps/compute_cmvn_stats.sh data/dev data/dev/log data/dev/data
+Succeeded creating CMVN stats for dev
+steps/make_mfcc.sh --nj 4 --cmd run.pl data/train data/train/log data/train/data
+Successfully validated data-directory data/train
+steps/make_mfcc.sh [info]: segments file exists: using that.
+Succeeded creating MFCC features for train
+steps/compute_cmvn_stats.sh data/train data/train/log data/train/data
+Succeeded creating CMVN stats for train
+Stage 1 Complete
+Commencing Stage 2
+feat-to-len scp:data/train/feats.scp ark,t:data/train_10kshort/tmp.len 
+utils/subset_data_dir.sh: reducing #utt from 56803 to 10000
+Reduced number of utterances from 10000 to 9865
+Using fix_data_dir.sh to reconcile the other files.
+fix_data_dir.sh: kept 9865 utterances out of 10000
+utils/fix_data_dir.sh: filtered data/train_10kshort_nodup/wav.scp from 671 to 669 lines based on filter /tmp/tmp.zrv3grh66K/recordings.
+utils/fix_data_dir.sh: filtered data/train_10kshort_nodup/reco2file_and_channel from 671 to 669 lines based on filter /tmp/tmp.zrv3grh66K/recordings.
+fix_data_dir.sh: old files are kept in data/train_10kshort_nodup/.backup
+Stage 2 Complete
+Commencing Stage 3
+steps/train_mono.sh --nj 4 --cmd run.pl data/train_10kshort_nodup data/lang exp/mono0a
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+490 warnings in exp/mono0a/log/acc.*.*.log
+10286 warnings in exp/mono0a/log/align.*.*.log
+Done
+steps/align_si.sh --nj 4 --cmd run.pl data/train data/lang exp/mono0a exp/mono0a_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data/train using model from exp/mono0a, putting alignments in exp/mono0a_ali
+steps/align_si.sh: done aligning data.
+steps/train_deltas.sh --cmd run.pl 2500 30000 data/train data/lang exp/mono0a_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono0a_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+1379 warnings in exp/tri1/log/acc.*.*.log
+1 warnings in exp/tri1/log/build_tree.log
+13384 warnings in exp/tri1/log/align.*.*.log
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+fsttablecompose data/lang_test/L_disambig.fst data/lang_test/G.fst 
+fstdeterminizestar --use-log=true 
+fstminimizeencoded 
+fstisstochastic data/lang_test/tmp/LG.fst 
+0.000553165 -3.30263
+[info]: LG not stochastic.
+fstcomposecontext --context-size=3 --central-position=1 --read-disambig-syms=data/lang_test/phones/disambig.int --write-disambig-syms=data/lang_test/tmp/disambig_ilabels_3_1.int data/lang_test/tmp/ilabels_3_1 
+fstisstochastic data/lang_test/tmp/CLG_3_1.fst 
+0.000553165 -3.30263
+[info]: CLG not stochastic.
+make-h-transducer --disambig-syms-out=exp/tri1/graph/disambig_tid.int --transition-scale=1.0 data/lang_test/tmp/ilabels_3_1 exp/tri1/tree exp/tri1/final.mdl 
+fsttablecompose exp/tri1/graph/Ha.fst data/lang_test/tmp/CLG_3_1.fst 
+fstdeterminizestar --use-log=true 
+fstminimizeencoded 
+fstrmepslocal 
+fstrmsymbols exp/tri1/graph/disambig_tid.int 
+fstisstochastic exp/tri1/graph/HCLGa.fst 
+0.693572 -3.60643
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri1/final.mdl 
+steps/decode.sh --nj 2 --cmd run.pl --num-threads 4 --parallel-opts -pe smp 4 exp/tri1/graph data/dev exp/tri1/decode_dev
+decode.sh: feature type is delta
+Warning: run.pl ignoring options "-pe smp 4 "
+steps/decode.sh --nj 2 --cmd run.pl --num-threads 4 --parallel-opts -pe smp 4 exp/tri1/graph data/test exp/tri1/decode_test
+decode.sh: feature type is delta
+Warning: run.pl ignoring options "-pe smp 4 "
+Stage 3 Complete
+Commencing Stage 4
+steps/align_si.sh --nj 4 --cmd run.pl data/train data/lang exp/tri1 exp/tri1_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data/train using model from exp/tri1, putting alignments in exp/tri1_ali
+steps/align_si.sh: done aligning data.
+steps/train_lda_mllt.sh --cmd run.pl 4000 50000 data/train data/lang exp/tri1_ali exp/tri2
+Accumulating LDA statistics.
+Accumulating tree stats
+Getting questions for tree clustering.
+Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+Converting alignments from exp/tri1_ali to use current tree
+Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+Estimating MLLT
+Training pass 3
+Training pass 4
+Estimating MLLT
+Training pass 5
+Training pass 6
+Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+1 warnings in exp/tri2/log/build_tree.log
+2570 warnings in exp/tri2/log/acc.*.*.log
+18893 warnings in exp/tri2/log/align.*.*.log
+35 warnings in exp/tri2/log/lda_acc.*.log
+Done training system with LDA+MLLT features in exp/tri2
+make-h-transducer --disambig-syms-out=exp/tri2/graph/disambig_tid.int --transition-scale=1.0 data/lang_test/tmp/ilabels_3_1 exp/tri2/tree exp/tri2/final.mdl 
+fstdeterminizestar --use-log=true 
+fstminimizeencoded 
+fstrmsymbols exp/tri2/graph/disambig_tid.int 
+fstrmepslocal 
+fsttablecompose exp/tri2/graph/Ha.fst data/lang_test/tmp/CLG_3_1.fst 
+fstisstochastic exp/tri2/graph/HCLGa.fst 
+0.693572 -3.60674
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri2/final.mdl 
+steps/decode.sh --nj 2 --cmd run.pl --num-threads 4 --parallel-opts -pe smp 4 exp/tri2/graph data/dev exp/tri2/decode_dev
+decode.sh: feature type is lda
+Warning: run.pl ignoring options "-pe smp 4 "
+steps/decode.sh --nj 2 --cmd run.pl --num-threads 4 --parallel-opts -pe smp 4 exp/tri2/graph data/test exp/tri2/decode_test
+decode.sh: feature type is lda
+Warning: run.pl ignoring options "-pe smp 4 "
+Stage 4 Complete
+Commencing Stage 5
+steps/align_si.sh --nj 4 --cmd run.pl data/train data/lang exp/tri2 exp/tri2_ali
+steps/align_si.sh: feature type is lda
+steps/align_si.sh: aligning data in data/train using model from exp/tri2, putting alignments in exp/tri2_ali
+steps/align_si.sh: done aligning data.
+steps/train_sat.sh --cmd run.pl 5000 100000 data/train data/lang exp/tri2_ali exp/tri3
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp/tri2_ali
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri2_ali to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+444 warnings in exp/tri3/log/fmllr.*.*.log
+18465 warnings in exp/tri3/log/align.*.*.log
+3215 warnings in exp/tri3/log/acc.*.*.log
+1 warnings in exp/tri3/log/build_tree.log
+steps/train_sat.sh: Likelihood evolution:
+-51.5745 -51.2415 -51.1699 -51.0247 -50.461 -49.7936 -49.2432 -48.8468 -48.5555 -47.9919 -47.7788 -47.5395 -47.3992 -47.295 -47.2001 -47.1126 -47.0322 -46.9584 -46.8905 -46.7327 -46.6438 -46.591 -46.5445 -46.5011 -46.4597 -46.4202 -46.3821 -46.3449 -46.3091 -46.2285 -46.1744 -46.148 -46.1312 -46.1199 
+Done
+make-h-transducer --disambig-syms-out=exp/tri3/graph/disambig_tid.int --transition-scale=1.0 data/lang_test/tmp/ilabels_3_1 exp/tri3/tree exp/tri3/final.mdl 
+fsttablecompose exp/tri3/graph/Ha.fst data/lang_test/tmp/CLG_3_1.fst 
+fstminimizeencoded 
+fstdeterminizestar --use-log=true 
+fstrmepslocal 
+fstrmsymbols exp/tri3/graph/disambig_tid.int 
+fstisstochastic exp/tri3/graph/HCLGa.fst 
+0.693572 -3.60657
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri3/final.mdl 
+steps/decode_fmllr.sh --nj 2 --cmd run.pl --num-threads 4 --parallel-opts -pe smp 4 exp/tri3/graph data/dev exp/tri3/decode_dev
+steps/decode.sh --parallel-opts -pe smp 4 --scoring-opts --num-threads 4 --skip-scoring false --acwt 0.083333 --nj 2 --cmd run.pl --beam 10.0 --model exp/tri3/final.alimdl --max-active 2000 exp/tri3/graph data/dev exp/tri3/decode_dev.si
+decode.sh: feature type is lda
+Warning: run.pl ignoring options "-pe smp 4 "
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+steps/decode_fmllr.sh: doing main lattice generation phase
+Warning: run.pl ignoring options "-pe smp 4 "
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+Warning: run.pl ignoring options "-pe smp 4 "
+steps/decode_fmllr.sh --nj 2 --cmd run.pl --num-threads 4 --parallel-opts -pe smp 4 exp/tri3/graph data/test exp/tri3/decode_test
+steps/decode.sh --parallel-opts -pe smp 4 --scoring-opts --num-threads 4 --skip-scoring false --acwt 0.083333 --nj 2 --cmd run.pl --beam 10.0 --model exp/tri3/final.alimdl --max-active 2000 exp/tri3/graph data/test exp/tri3/decode_test.si
+decode.sh: feature type is lda
+Warning: run.pl ignoring options "-pe smp 4 "
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+steps/decode_fmllr.sh: doing main lattice generation phase
+Warning: run.pl ignoring options "-pe smp 4 "
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+Warning: run.pl ignoring options "-pe smp 4 "
+Stage 5 Complete
+Commencing Stage 6
+steps/align_fmllr.sh --nj 4 --cmd run.pl data/train data/lang exp/tri3 exp/tri3_ali
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+steps/align_fmllr.sh: aligning data in data/train using exp/tri3/final.alimdl and speaker-independent features.
+steps/align_fmllr.sh: computing fMLLR transforms
+steps/align_fmllr.sh: doing final alignment.
+steps/align_fmllr.sh: done aligning data.
+75 warnings in exp/tri3_ali/log/fmllr.*.log
+4470 warnings in exp/tri3_ali/log/align_pass1.*.log
+5089 warnings in exp/tri3_ali/log/align_pass2.*.log
+steps/make_denlats.sh --transform-dir exp/tri3_ali --nj 4 --cmd run.pl data/train data/lang exp/tri3 exp/tri3_denlats
+Making unigram grammar FST in exp/tri3_denlats/lang
+sym2int.pl: replacing 'oeil with 7
+sym2int.pl: replacing 'mealey with 7
+sym2int.pl: replacing 'ivoire with 7
+sym2int.pl: replacing 'ers with 7
+sym2int.pl: replacing 'ers with 7
+sym2int.pl: replacing doctoreams with 7
+sym2int.pl: replacing misterteszler with 7
+sym2int.pl: replacing revealexactly with 7
+sym2int.pl: replacing didn with 7
+sym2int.pl: replacing 'am with 7
+sym2int.pl: replacing didn with 7
+sym2int.pl: replacing camiss with 7
+sym2int.pl: replacing spittin with 7
+sym2int.pl: replacing 'barney with 7
+sym2int.pl: replacing doctorum with 7
+sym2int.pl: replacing didn with 7
+sym2int.pl: replacing 'd with 7
+sym2int.pl: replacing didn with 7
+sym2int.pl: replacing didn with 7
+sym2int.pl: replacing didn with 7
+sym2int.pl: not warning for OOVs any more times
+** Replaced 98 instances of OOVs with 7
+Compiling decoding graph in exp/tri3_denlats/dengraph
+fsttablecompose exp/tri3_denlats/lang/L_disambig.fst exp/tri3_denlats/lang/G.fst 
+fstminimizeencoded 
+fstdeterminizestar --use-log=true 
+fstisstochastic exp/tri3_denlats/lang/tmp/LG.fst 
+0.000486732 -0.318489
+[info]: LG not stochastic.
+fstcomposecontext --context-size=3 --central-position=1 --read-disambig-syms=exp/tri3_denlats/lang/phones/disambig.int --write-disambig-syms=exp/tri3_denlats/lang/tmp/disambig_ilabels_3_1.int exp/tri3_denlats/lang/tmp/ilabels_3_1 
+fstisstochastic exp/tri3_denlats/lang/tmp/CLG_3_1.fst 
+0.000486732 -0.318489
+[info]: CLG not stochastic.
+make-h-transducer --disambig-syms-out=exp/tri3_denlats/dengraph/disambig_tid.int --transition-scale=1.0 exp/tri3_denlats/lang/tmp/ilabels_3_1 exp/tri3/tree exp/tri3/final.mdl 
+fstdeterminizestar --use-log=true 
+fsttablecompose exp/tri3_denlats/dengraph/Ha.fst exp/tri3_denlats/lang/tmp/CLG_3_1.fst 
+fstminimizeencoded 
+fstrmsymbols exp/tri3_denlats/dengraph/disambig_tid.int 
+fstrmepslocal 
+fstisstochastic exp/tri3_denlats/dengraph/HCLGa.fst 
+0.0008424 -0.332606
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri3/final.mdl 
+align_si.sh: feature type is lda
+steps/make_denlats.sh: using fMLLR transforms from exp/tri3_ali
+steps/make_denlats.sh: done generating denominator lattices.
+steps/train_mmi.sh --cmd run.pl --boost 0.1 data/train data/lang exp/tri3_ali exp/tri3_denlats exp/tri3_mmi_b0.1
+steps/train_mmi.sh: feature type is lda
+Using transforms from exp/tri3_ali
+Iteration 0 of MMI training
+Iteration 0: objf was 0.227478901599746, MMI auxf change was 0.00746847426099872
+Iteration 1 of MMI training
+Iteration 1: objf was 0.240730517898926, MMI auxf change was 0.00502217181794672
+Iteration 2 of MMI training
+Iteration 2: objf was 0.250111769536916, MMI auxf change was 0.00392679622568989
+Iteration 3 of MMI training
+Iteration 3: objf was 0.257593473880389, MMI auxf change was 0.00330342293009649
+MMI training finished
+steps/decode.sh --transform-dir exp/tri3/decode_dev --nj 2 --cmd run.pl --iter 1 --num-threads 4 --parallel-opts -pe s\
+mp 4 exp/tri3/graph data/dev exp/tri3_mmi_b0.1/decode_dev_it1
+decode.sh: feature type is lda
+Using fMLLR transforms from exp/tri3/decode_dev
+Warning: run.pl ignoring options "-pe smp 4 "
+steps/decode.sh --transform-dir exp/tri3/decode_test --nj 2 --cmd run.pl --iter 1 --num-threads 4 --parallel-opts -pe smp 4 exp/tri3\
+/graph data/test exp/tri3_mmi_b0.1/decode_test_it1
+decode.sh: feature type is lda
+Using fMLLR transforms from exp/tri3/decode_test
+Warning: run.pl ignoring options "-pe smp 4 "
+steps/decode.sh --transform-dir exp/tri3/decode_dev --nj 2 --cmd run.pl --iter 2 --num-threads 4 --parallel-opts -pe smp 4 exp/tri3/\
+graph data/dev exp/tri3_mmi_b0.1/decode_dev_it2
+decode.sh: feature type is lda
+Using fMLLR transforms from exp/tri3/decode_dev
+Warning: run.pl ignoring options "-pe smp 4 "
+steps/decode.sh --transform-dir exp/tri3/decode_test --nj 2 --cmd run.pl --iter 2 --num-threads 4 --parallel-opts -pe smp 4 exp/tri3\
+/graph data/test exp/tri3_mmi_b0.1/decode_test_it2
+decode.sh: feature type is lda
+Using fMLLR transforms from exp/tri3/decode_test
+Warning: run.pl ignoring options "-pe smp 4 "
+steps/decode.sh --transform-dir exp/tri3/decode_dev --nj 2 --cmd run.pl --iter 3 --num-threads 4 --parallel-opts -pe smp 4 exp/tri3/\
+graph data/dev exp/tri3_mmi_b0.1/decode_dev_it3
+decode.sh: feature type is lda
+Using fMLLR transforms from exp/tri3/decode_dev
+Warning: run.pl ignoring options "-pe smp 4 "
+steps/decode.sh --transform-dir exp/tri3/decode_test --nj 2 --cmd run.pl --iter 3 --num-threads 4 --parallel-opts -pe smp 4 exp/tri3\
+/graph data/test exp/tri3_mmi_b0.1/decode_test_it3
+decode.sh: feature type is lda
+Using fMLLR transforms from exp/tri3/decode_test
+Warning: run.pl ignoring options "-pe smp 4 "
+steps/decode.sh --transform-dir exp/tri3/decode_dev --nj 2 --cmd run.pl --iter 4 --num-threads 4 --parallel-opts -pe smp 4 exp/tri3/graph data/dev exp/tri3_mmi_b0.1/decode_dev_it4
+decode.sh: feature type is lda
+Using fMLLR transforms from exp/tri3/decode_dev
+Warning: run.pl ignoring options "-pe smp 4 "
+steps/decode.sh --transform-dir exp/tri3/decode_test --nj 2 --cmd run.pl --iter 4 --num-threads 4 --parallel-opts -pe smp 4 exp/tri3/graph data/test exp/tri3_mmi_b0.1/decode_test_it4
+decode.sh: feature type is lda
+Using fMLLR transforms from exp/tri3/decode_test
+Warning: run.pl ignoring options "-pe smp 4 "
+Stage 6 Complete
+success...
