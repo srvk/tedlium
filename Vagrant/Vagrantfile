@@ -57,7 +57,7 @@ config.vm.provider :virtualbox do |vb|
 # this one is for linux ("pulse")
 #    vb.customize ["modifyvm", :id, '--audio', 'pulse', '--audiocontroller', 'ac97'] # choices: hda sb16 ac97
     vb.cpus = 4
-    vb.memory = 14369 # 4 GB
+    vb.memory = 14369 # 14 GB
 end
 
   #
