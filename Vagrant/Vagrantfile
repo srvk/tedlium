@@ -105,6 +105,8 @@ end
      #cd /kaldi-trunk/src   && find *bin -name "*~" -exec rm {} \;
 
      # TEDLIUM SPECIFICS
+    cd /kaldi-trunk/egs/tedlium/s5
+    svn update -r 4708 --accept working
 
      # language model - link /kaldi-trunk/egs/tedlium/s5/db -> /vagrant/db
      rm -rf /kaldi-trunk/egs/tedlium/s5/db
