@@ -104,10 +104,6 @@ end
      #cd /kaldi-trunk/src   && find *bin \( -executable -type f \) -print0 | xargs -0 -n 1 -P `lscpu -p|grep -v "#"|wc -l` gzexe
      #cd /kaldi-trunk/src   && find *bin -name "*~" -exec rm {} \;
 
-     chown -R vagrant:vagrant /kaldi-trunk 
-     ln -fs /kaldi-trunk /home/vagrant/kaldi-trunk
-     chown vagrant:vagrant /home/vagrant/kaldi-trunk
-
      # TEDLIUM SPECIFICS
 
      # language model - link /kaldi-trunk/egs/tedlium/s5/db -> /vagrant/db
@@ -124,6 +120,11 @@ end
      # refresh run scripts from local copy (allows us to push 'updated' version)
      cp -f /vagrant/run.sh /kaldi-trunk/egs/tedlium/s5
      cp -f /vagrant/cmd.sh /kaldi-trunk/egs/tedlium/s5
+     
+     # fix ownership
+     chown -R vagrant:vagrant /kaldi-trunk 
+     ln -fs /kaldi-trunk /home/vagrant/kaldi-trunk
+     chown vagrant:vagrant /home/vagrant/kaldi-trunk
 
      # training audio
      #
