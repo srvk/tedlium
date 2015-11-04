@@ -109,16 +109,6 @@ end
      chown vagrant:vagrant /home/vagrant/kaldi-trunk
 
      # TEDLIUM SPECIFICS
-     #
-     # Moved this from a user-initiated setup step to Vagrantfile, since
-     # it is essentially the same thing (on first 'vagrant up')
-     # Will this be a problem for 'vagrant provision' though? Don't want
-     # to re-download!
-     if [ ! -e /vagrant/db ];
-     then
-       cd /vagrant
-       wget -qO- http://speechkitchen.org/vms/Data/tedlium-data.tgz | tar zxv
-     fi
 
      # language model - link /kaldi-trunk/egs/tedlium/s5/db -> /vagrant/db
      rm -rf /kaldi-trunk/egs/tedlium/s5/db
